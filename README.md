@@ -79,10 +79,12 @@ unique login credentials.
  So, the code should be like two output pins must go to two
 Relays and the other two output pin must go to the manual
 switch.
+
  In the homepage of app interface, there should be horizontal
 tab like All Devices, Living Room, Bed room, Second Bedroom,
 Dining Room, Kitchen, Study room and others (others name can
 be edit)
+
  Each tab has its own Add or (+) Button to add the devices or we
 can add it from special + button on the top right corner of the
 app interface.
