@@ -16,6 +16,8 @@ For help getting started with Flutter, view our
 [online documentation](https://flutter.dev/docs), which offers tutorials,
 samples, guidance on mobile development, and a full API reference.
 
+### The prototype of the flutter project is given in file prototype.pdf in code base, clone the repository to add any features to the app
+
 
 # Product Description:
  A Home Automation System where the device can be fit into any kind of switch board that is already exixting with the wall, so need of additional changes to the boad.
