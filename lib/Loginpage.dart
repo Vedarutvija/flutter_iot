@@ -73,8 +73,8 @@ class Loginpage extends StatelessWidget {
                           );
                         },
                         minWidth: 200,
-                        child: Text('login' , style: TextStyle(
-                            color: Colors.black,
+                        child: Text('Login' , style: TextStyle(
+                            color: Colors.white,
                             fontSize: 20,
                             fontWeight: FontWeight.bold
 
@@ -122,5 +122,4 @@ class Loginpage extends StatelessWidget {
       ),
     );
   }
-
 }
