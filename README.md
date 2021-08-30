@@ -35,7 +35,7 @@ Google Assistance.
 The device comes with two Wi-Fi modules i.e. NodeMCU and
 ESP-01. So, the firmware should be compatible with the both
 modules.
-## 1. NODE-MCU MODULE:
+### 1. NODE-MCU or ESP 32 MODULE:
  With this module we have to control up to three devices.
 
  But in the Node-MCU Module we have to use SIX GPIO output
@@ -73,7 +73,7 @@ the WIFI credentials and add to the respective tab and done.
 can be operated by all the family members with the same
 unique login credentials.
 
-## 2. ESP-01 MODULE:
+### 2. ESP-01 MODULE:
  With this module we have to control up to two devices.
 
  But in the ESP-01 Module we have four GPIO output pins
