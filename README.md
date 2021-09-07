@@ -20,7 +20,7 @@ samples, guidance on mobile development, and a full API reference.
 
 
 # Product Description:
- A Home Automation System where the device can be fit into any kind of switch board that is already exixting with the wall, so need of additional changes to the boad.
+ A Home Automation System which the device is compactable to use i.e, it can be fit into any kind of switch board which is already existing with the wall, so no need of additional changes to the board.
 
  It is compact, it can easily fit inside the switch
 board box.
