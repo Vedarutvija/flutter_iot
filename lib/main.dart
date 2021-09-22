@@ -1,10 +1,10 @@
 
 
-import 'package:flutter/cupertino.dart';
+
 import 'package:flutter/material.dart';
 import 'SignUp.dart';
 import 'Loginpage.dart';
-import 'HomePage.dart';
+import 'Screens/HomePage.dart';
 import 'settings.dart';
 
 void main() =>
