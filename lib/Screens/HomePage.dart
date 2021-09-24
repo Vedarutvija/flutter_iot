@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:curved_navigation_bar/curved_navigation_bar.dart';
 import 'package:untitled/Screens/Connect.dart';
 import 'package:untitled/Screens/Me.dart';
+import 'package:untitled/Screens/settings.dart';
 
 void main() => runApp(MaterialApp(
   home: HomePage(),
@@ -105,6 +106,11 @@ class _HomePageState
                   ListTile(
                     title: const Text('Home Management'),
                     onTap: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(builder: (context) => settings()),
+                      );
+
                       // Update the state of the app.
                       // ...
                     },

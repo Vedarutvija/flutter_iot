@@ -32,12 +32,14 @@ class Bluetooth extends StatelessWidget {
                   children:<Widget>[
                     SizedBox( height: 250,),
                     ElevatedButton(
+
                         child: Text('Bluetooth'),
 
                         onPressed: () {
                           print('Pressed');
                         },
                         style: ButtonStyle(
+
                           backgroundColor: MaterialStateProperty.all(Colors.redAccent),
                         )
                     ),

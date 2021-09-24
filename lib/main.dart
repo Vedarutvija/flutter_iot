@@ -5,7 +5,7 @@ import 'package:flutter/material.dart';
 import 'SignUp.dart';
 import 'Loginpage.dart';
 import 'Screens/HomePage.dart';
-import 'settings.dart';
+import 'Screens/settings.dart';
 
 void main() =>
     runApp(MaterialApp(
