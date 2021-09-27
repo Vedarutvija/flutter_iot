@@ -5,10 +5,11 @@ import 'package:flutter/material.dart';
 import 'SignUp.dart';
 import 'Loginpage.dart';
 import 'Screens/HomePage.dart';
-import 'Screens/settings.dart';
+import 'Screens/RoomSettings.dart';
 
 void main() =>
     runApp(MaterialApp(
+      debugShowCheckedModeBanner: false,
       home: MyApp(),
     ));
 
@@ -34,6 +35,7 @@ class MyApp extends StatelessWidget {
                     height: 50,
 
                     child: Material(
+
                       borderRadius: BorderRadius.circular(10),
                       shadowColor: Colors.red,
                       color: Colors.red,
