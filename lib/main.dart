@@ -9,7 +9,7 @@ import 'Screens/RoomSettings.dart';
 
 void main() =>
     runApp(MaterialApp(
-      debugShowCheckedModeBanner: false,
+     
       home: MyApp(),
     ));
 
