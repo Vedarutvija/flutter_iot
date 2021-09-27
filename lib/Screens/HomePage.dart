@@ -3,8 +3,8 @@ import 'package:flutter/material.dart';
 import 'package:curved_navigation_bar/curved_navigation_bar.dart';
 import 'package:untitled/Screens/Connect.dart';
 import 'package:untitled/Screens/Me.dart';
-import 'package:untitled/Screens/settings.dart';
-
+import 'package:untitled/Screens/RoomSettings.dart';
+import 'package:untitled/Screens/HomeSettings.dart';
 void main() => runApp(MaterialApp(
   home: HomePage(),
 ));
@@ -108,18 +108,17 @@ class _HomePageState
                     onTap: () {
                       Navigator.push(
                         context,
-                        MaterialPageRoute(builder: (context) => settings()),
+                        MaterialPageRoute(builder: (context) =>  HomeSettings()),
                       );
-
-                      // Update the state of the app.
-                      // ...
                     },
                   ),
                   ListTile(
                     title: const Text('Room Management'),
                     onTap: () {
-                      // Update the state of the app.
-                      // ...
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(builder: (context) =>  SettingsPage()),
+                      );
                     },
                   ),
                 ],
