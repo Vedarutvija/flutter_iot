@@ -77,7 +77,7 @@ class _HomePageState
                 mainAxisAlignment: MainAxisAlignment.start,
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children:<Widget>[
-                  SizedBox( height: 250,),
+                  SizedBox( height: 255,),
                   ElevatedButton(
                     child: Text('Add Device'),
 
@@ -126,18 +126,15 @@ class _HomePageState
           ),
 
         bottomNavigationBar: CurvedNavigationBar(
-        backgroundColor: const Color(0XFF0091EA),
+
         items: const <Widget>[
-          Icon(Icons.home, size: 30),
+          Icon(Icons.home, size: 30, color: Color(0XFF22E67B)),
           Icon(Icons.bluetooth, size: 30),
           Icon(Icons.account_circle, size: 30),
         ],
         index: 2,
         onTap: (index) {
-          if (index == 0) {
-            Navigator.of(context)
-                .push(MaterialPageRoute(builder: (context) => HomePage()));
-          }
+
           if (index == 1) {
             Navigator.of(context)
                 .push(MaterialPageRoute(builder: (context) => Bluetooth()));

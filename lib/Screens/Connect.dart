@@ -30,48 +30,58 @@ class Bluetooth extends StatelessWidget {
                   mainAxisAlignment: MainAxisAlignment.start,
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children:<Widget>[
-                    SizedBox( height: 250,),
+                    SizedBox( height: 160,),
                     ElevatedButton(
 
+                          style: ElevatedButton.styleFrom(
+                            minimumSize: const Size(150, 50),
+                            maximumSize: const Size(200, 50),
+                            primary: Colors.pinkAccent,
+                          ),
                         child: Text('Bluetooth'),
 
                         onPressed: () {
                           print('Pressed');
                         },
-                        style: ButtonStyle(
 
-                          backgroundColor: MaterialStateProperty.all(Colors.redAccent),
-                        )
                     ),
+                    SizedBox( height: 20,),
                     ElevatedButton(
+                        style: ElevatedButton.styleFrom(
+                          minimumSize: const Size(150, 50),
+                          maximumSize: const Size(200, 50),
+                          primary: Colors.lightBlueAccent,
+                        ),
                         child: Text('Alexa'),
 
                         onPressed: () {
                           print('Pressed');
                         },
-                        style: ButtonStyle(
-                          backgroundColor: MaterialStateProperty.all(Colors.redAccent),
-                        )
+
                     ),
+                    SizedBox( height: 20,),
                     ElevatedButton(
+                        style: ElevatedButton.styleFrom(
+                          primary: Colors.orange,
+                          // onPrimary: Colors.orange,
+                          minimumSize: const Size(150, 50),
+                        ),
                         child: Text('Google Assistant'),
 
                         onPressed: () {
                           print('Pressed');
                         },
-                        style: ButtonStyle(
-                          backgroundColor: MaterialStateProperty.all(Colors.redAccent),
-                        )
+
                     )
                   ]
               ),
             ),
 
             bottomNavigationBar: CurvedNavigationBar(
-              backgroundColor: const Color(0XFF0091EA),
+
               items: const <Widget>[
                 Icon(Icons.home, size: 30),
-                Icon(Icons.bluetooth, size: 30),
+                Icon(Icons.bluetooth, size: 30, color: Color(0XFF22E67B)),
                 Icon(Icons.account_circle, size: 30),
               ],
               index: 2,
@@ -80,10 +90,7 @@ class Bluetooth extends StatelessWidget {
                   Navigator.of(context)
                       .push(MaterialPageRoute(builder: (context) => HomePage()));
                 }
-                if (index == 1) {
-                  Navigator.of(context)
-                      .push(MaterialPageRoute(builder: (context) => Bluetooth()));
-                }
+
                 if (index == 2) {
                   Navigator.of(context)
                       .push(MaterialPageRoute(builder: (context) => Me()));

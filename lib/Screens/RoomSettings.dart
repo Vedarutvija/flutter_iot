@@ -1,6 +1,5 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_settings_screens/flutter_settings_screens.dart';
 class SettingsPage extends StatefulWidget {
   // const SettingsPage({Key? key}) : super(key: key);
 
@@ -19,30 +18,30 @@ class _SettingsPageState extends State<SettingsPage> {
             children: <Widget>[
               Container(
                 height: 50,
-                color: Colors.blue[500],
+                color: Colors.blueGrey[500],
                 child: const Center(child: Text('Hall Room'))
               ),
               Container(
                   height: 50,
-                  color: Colors.blue[500],
+                  color: Colors.lightBlueAccent[500],
                   child: const Center(child: Text('Bed Room'))
 
               ),
               Container(
                   height: 50,
-                  color: Colors.blue[500],
+                  color: Colors.blueGrey[500],
                   child: const Center(child: Text('Kitchen'))
 
               ),
               Container(
                   height: 50,
-                  color: Colors.blue[500],
+                  color: Colors.lightBlueAccent[500],
                   child: const Center(child: Text('Study Room'))
 
               ),
               Container(
                   height: 50,
-                  color: Colors.blue[500],
+                  color: Colors.blueGrey[500],
                   child: const Center(child: Text('Add Room'))
 
               ),
