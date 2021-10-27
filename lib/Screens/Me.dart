@@ -104,7 +104,7 @@ class Me extends StatelessWidget {
               items: const <Widget>[
                 Icon(Icons.home, size: 30),
                 Icon(Icons.bluetooth, size: 30),
-                Icon(Icons.account_circle, size: 30, ),
+                Icon(Icons.account_circle, size: 30,color: Color(0XFFD81B60) ),
               ],
               index: 2,
               onTap: (index) {
