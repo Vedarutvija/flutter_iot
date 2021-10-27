@@ -77,16 +77,21 @@ class _HomePageState
                 mainAxisAlignment: MainAxisAlignment.start,
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children:<Widget>[
-                  SizedBox( height: 255,),
+                  SizedBox( height: 250,),
                   ElevatedButton(
+                      style: ElevatedButton.styleFrom(
+                        minimumSize: const Size(150, 50),
+                        primary: Colors.redAccent,
+                      ),
                     child: Text('Add Device'),
 
                     onPressed: () {
                       print('Pressed');
                     },
-                    style: ButtonStyle(
-                      backgroundColor: MaterialStateProperty.all(Colors.redAccent),
-                    )
+                    // style: ButtonStyle(
+                    //   minimumSize: const Size(150, 50),
+                    //   backgroundColor: MaterialStateProperty.all(Colors.redAccent),
+                    // )
                   )
 
                 ]
@@ -124,28 +129,27 @@ class _HomePageState
                 ],
               ),
           ),
+            bottomNavigationBar: CurvedNavigationBar(
 
-        bottomNavigationBar: CurvedNavigationBar(
+              items: const <Widget>[
+                Icon(Icons.home, size: 30,color: Color(0XFFD81B60)),
+                Icon(Icons.bluetooth, size: 30),
+                Icon(Icons.account_circle, size: 30 ),
+              ],
+              index: 0,
+              onTap: (index) {
+                if (index == 1) {
+                  Navigator.of(context)
+                      .push(MaterialPageRoute(builder: (context) => Bluetooth()));
+                }
+                if (index == 2) {
+                  Navigator.of(context)
+                      .push(MaterialPageRoute(builder: (context) => Me()));
+                }
 
-        items: const <Widget>[
-          Icon(Icons.home, size: 30, color: Color(0XFF22E67B)),
-          Icon(Icons.bluetooth, size: 30),
-          Icon(Icons.account_circle, size: 30),
-        ],
-        index: 2,
-        onTap: (index) {
 
-          if (index == 1) {
-            Navigator.of(context)
-                .push(MaterialPageRoute(builder: (context) => Bluetooth()));
-          }
-          if (index == 2) {
-            Navigator.of(context)
-                .push(MaterialPageRoute(builder: (context) => Me()));
-          }
-
-        },
-      )
+              },
+            )
         ),
       ),
     );
