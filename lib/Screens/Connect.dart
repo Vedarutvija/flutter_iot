@@ -30,26 +30,25 @@ class Bluetooth extends StatelessWidget {
                   mainAxisAlignment: MainAxisAlignment.start,
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children:<Widget>[
-                    SizedBox( height: 160,),
-                    ElevatedButton(
-
-                          style: ElevatedButton.styleFrom(
-                            minimumSize: const Size(150, 50),
-                            maximumSize: const Size(200, 50),
-                            primary: Colors.pinkAccent,
-                          ),
-                        child: Text('Bluetooth'),
-
-                        onPressed: () {
-                          print('Pressed');
-                        },
-
-                    ),
-                    SizedBox( height: 20,),
+                    SizedBox( height: 150,),
+                    // ElevatedButton(
+                    //
+                    //       style: ElevatedButton.styleFrom(
+                    //         minimumSize: const Size(150, 50),
+                    //         primary: Colors.pinkAccent,
+                    //       ),
+                    //     child: Text('Bluetooth'),
+                    //
+                    //     onPressed: () {
+                    //       print('Pressed');
+                    //     },
+                    //
+                    // ),
+                    SizedBox( height: 30,),
                     ElevatedButton(
                         style: ElevatedButton.styleFrom(
                           minimumSize: const Size(150, 50),
-                          maximumSize: const Size(200, 50),
+
                           primary: Colors.lightBlueAccent,
                         ),
                         child: Text('Alexa'),
@@ -81,10 +80,10 @@ class Bluetooth extends StatelessWidget {
 
               items: const <Widget>[
                 Icon(Icons.home, size: 30),
-                Icon(Icons.bluetooth, size: 30, color: Color(0XFF22E67B)),
+                Icon(Icons.bluetooth, size: 30, color: Color(0XFFD81B60)),
                 Icon(Icons.account_circle, size: 30),
               ],
-              index: 2,
+              index: 1,
               onTap: (index) {
                 if (index == 0) {
                   Navigator.of(context)
